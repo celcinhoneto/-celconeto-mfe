@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,7 +19,12 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "publish": "yarn prepare && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/celcinhoneto/celconeto-mfe"
   },
   "peerDependencies": {
     "react": ">=16"
